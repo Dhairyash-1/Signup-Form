@@ -6,6 +6,8 @@
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- google fonts link  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -17,63 +19,71 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <!-- css file link -->
     <link rel="stylesheet" href="main.css" />
-
     <title>Sign up form</title>
   </head>
   <body class="h-full overflow-scroll">
     <main
-      class="max-w-full px-6 flex flex-col gap-10 items-center justify-center bg-[url('./images/bg-intro-desktop.png')] h-full md:h-screen bg-red md:flex-row lg:px-36 md:px-20 md:justify-between py-40"
+      class="sm:p-16 max-w-full px-6 flex flex-col items-center justify-center bg-[url('./images/bg-intro-desktop.png')] h-full md:h-screen bg-red md:flex-row lg:px-24 md:justify-between py-20 gap-12"
     >
-      <div class="text-box text-center md:text-start">
-        <h1 class="mb-8 font-bold text-white text-3xl md:text-5xl">
+      <!-- left side text box -->
+      <!-- ********************************************************** -->
+      <div class="text-box grow shrink text-center md:text-start">
+        <h1 class="mb-8 font-bold text-white text-4xl md:text-6xl">
           Learn to code by watching others
         </h1>
-        <p class="text-white opacity-80 text-sm font-medium">
+        <p
+          class="text-white opacity-80 text-md font-medium md:text-lg max-w-lg inline"
+        >
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </div>
-      <div class="form-area">
+
+      <!-- sign up form -->
+      <!-- ************************************************** -->
+      <div class="form-area grow shrink sm:min-w-[412px] max-w-2xl w-full">
+        <!-- banner -->
         <div
-          class="banner mb-8 bg-blue border-none rounded-md text-white font-medium px-16 py-4 text-center"
+          class="banner mb-8 shadow-grayishBlue bg-blue border-none rounded-md text-white font-medium px-16 py-4 text-center"
         >
           Try it free 7 days
           <span class="opacity-80"> then $20/mo. thereafter</span>
         </div>
-
-        <form action="#" class="md:p-10 bg-white max-w-7xl rounded-md p-5">
+        <!-- signup form entry  -->
+        <form action="#" class="md:p-10 shadow-xl bg-white rounded-md p-5">
           <input
-            class="p-4 w-full rounded-md border- h-14 border-solid border mb-8"
+            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
             type="text"
             placeholder="First Name"
             name="firstname"
             id=""
           />
           <input
-            class="p-4 w-full rounded-md border- h-14 border-solid border mb-8"
+            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
             type="text"
             placeholder="Last Name"
             name="lasname"
             id=""
           />
           <input
-            class="p-4 w-full rounded-md border- h-14 border-solid border mb-8"
+            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
             type="email"
             placeholder="Email Address"
             name="email"
             id=""
           />
           <input
-            class="p-4 w-full rounded-md border-grayishBlue border-solid border mb-8 h-14"
+            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border-grayishBlue border-solid border-2 mb-8 h-14"
             type="password"
             placeholder="Password"
             name="password"
             id=""
           />
           <button
-            class="bg-green border-none text-white w-full p-4 rounded-md mb-4 font-medium uppercase tracking-wider"
+            class="bg-green border-none hover:opacity-70 shadow-inner text-white w-full p-4 rounded-md mb-4 font-medium uppercase tracking-wider"
             type="submit"
           >
             Claim your free trial
@@ -85,8 +95,5 @@
         </form>
       </div>
     </main>
-    <!-- <h1>hello</h1>
-     Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password   -->
   </body>
 </html>

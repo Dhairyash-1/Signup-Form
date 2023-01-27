@@ -8,7 +8,10 @@
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <script
+      src="https://kit.fontawesome.com/53f653bbb9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- google fonts link  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -23,8 +26,9 @@
     />
     <!-- css file link -->
 
+    <script src="./js/script.js" defer></script>
     <title>Sign up form</title>
-    <link rel="stylesheet" href="./assets/index-b293a9d3.css" />
+    <link rel="stylesheet" href="./assets/index-cf08c6f6.css" />
   </head>
   <body class="h-full overflow-y-scroll">
     <main
@@ -56,45 +60,101 @@
           <span class="opacity-80"> then $20/mo. thereafter</span>
         </div>
         <!-- signup form entry  -->
-        <form action="#" class="md:p-10 shadow-xl bg-white rounded-md p-5">
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
-            type="text"
-            placeholder="First Name"
-            name="firstname"
-            id=""
-          />
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
-            type="text"
-            placeholder="Last Name"
-            name="lasname"
-            id=""
-          />
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            id=""
-          />
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border-grayishBlue border-solid border-2 mb-8 h-14"
-            type="password"
-            placeholder="Password"
-            name="password"
-            id=""
-          />
-          <button
-            class="bg-green border-none hover:opacity-70 shadow-inner text-white w-full p-4 rounded-md mb-4 font-medium uppercase tracking-wider"
-            type="submit"
-          >
-            Claim your free trial
-          </button>
-          <div class="terms-condition text-sm text-grayishBlue text-center">
-            By clicking the button, you are agreeing to our
-            <span class="text-red font-bold"> Terms and Services</span>
+        <form
+          action="#"
+          class="form bg-white py-12 px-9 rounded-md shadow-md"
+          id="form"
+        >
+          <!-- firstName field -->
+          <div class="form-control text-right relative">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              autocomplete="off"
+              placeholder="First Name"
+              class="firstname border-2 rounded-md px-8 font-semibold py-4 w-full border-solid outline-none focus:border-darkBlue"
+            />
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
+            >
           </div>
+          <!-- lastName field -->
+          <div class="form-control text-right relative">
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              autocomplete="off"
+              placeholder="Last Name"
+              class="lastName border-2 rounded-md px-8 font-semibold py-4 w-full border-solid focus:border-darkBlue outline-none"
+            />
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
+            >
+          </div>
+          <!-- email field -->
+          <div class="form-control text-right relative">
+            <input
+              type="text"
+              name="email"
+              id="email"
+              autocomplete="off"
+              placeholder="Email"
+              class="email border-2 rounded-md px-8 font-semibold py-4 w-full border-solid focus:border-darkBlue outline-none"
+            />
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
+            >
+          </div>
+          <!-- password field -->
+          <div class="form-control text-right relative">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              autocomplete="off"
+              placeholder="Password"
+              class="password border-2 rounded-md px-8 font-semibold py-4 w-full border-solid focus:border-darkBlue outline-none"
+            />
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
+            >
+          </div>
+          <button
+            type="submit"
+            class="bg-green border-none outline-none rounded-md px-8 py-4 w-full text-white font-semibold hover:opacity-80"
+          >
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <p class="tc text-xs text-grayishBlue mt-5 text-center">
+            By clicking the button, you are agreeing to our
+            <span class="text-red font-bold">Terms and Services</span>
+          </p>
         </form>
       </div>
     </main>

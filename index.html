@@ -8,7 +8,10 @@
     <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <script
+      src="https://kit.fontawesome.com/53f653bbb9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- google fonts link  -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -56,64 +59,101 @@
           <span class="opacity-80"> then $20/mo. thereafter</span>
         </div>
         <!-- signup form entry  -->
-        <form action="#" class="md:p-10 shadow-xl bg-white rounded-md p-5">
-          <div class="mb-6 text-right">
+        <form
+          action="#"
+          class="form bg-white py-12 px-9 rounded-md shadow-md"
+          id="form"
+        >
+          <!-- firstName field -->
+          <div class="form-control text-right relative">
             <input
-              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2"
               type="text"
+              name="firstName"
+              id="firstName"
+              autocomplete="off"
               placeholder="First Name"
-              name="firstname"
+              class="firstname border-2 rounded-md px-8 font-semibold py-4 w-full border-solid outline-none focus:border-darkBlue"
             />
-
-            <span class="hidden text-xs mt-2 text-red -mb-1" id="error"
-              >First name cannot be empty</span
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
             >
           </div>
-          <div class="mb-6 text-right">
+          <!-- lastName field -->
+          <div class="form-control text-right relative">
             <input
-              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2"
               type="text"
+              name="lastName"
+              id="lastName"
+              autocomplete="off"
               placeholder="Last Name"
-              name="lasname"
+              class="lastName border-2 rounded-md px-8 font-semibold py-4 w-full border-solid focus:border-darkBlue outline-none"
             />
-            <span class="hidden text-xs mt-2 text-red -mb-1" id="error"
-              >Last name cannot be empty</span
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
             >
           </div>
-          <div class="mb-6 text-right">
+          <!-- email field -->
+          <div class="form-control text-right relative">
             <input
-              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2"
               type="text"
-              placeholder="Email Address"
               name="email"
               id="email"
+              autocomplete="off"
+              placeholder="Email"
+              class="email border-2 rounded-md px-8 font-semibold py-4 w-full border-solid focus:border-darkBlue outline-none"
             />
-            <span class="hidden text-xs mt-2 text-red -mb-1" id="email-error"
-              >Looks like this is not an email</span
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
             >
           </div>
-          <div class="mb-6 text-right">
+          <!-- password field -->
+          <div class="form-control text-right relative">
             <input
-              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border-solid border-2 h-14"
               type="password"
-              placeholder="Password"
               name="password"
+              id="password"
+              autocomplete="off"
+              placeholder="Password"
+              class="password border-2 rounded-md px-8 font-semibold py-4 w-full border-solid focus:border-darkBlue outline-none"
             />
-            <span class="hidden text-xs mt-2 text-red -mb-1" id="error"
-              >Password cannot be empty</span
+            <i
+              class="error fa-solid fa-circle-exclamation absolute top-[12px] text-[#e74c3c] invisible right-4 text-2xl"
+            ></i>
+            <i
+              class="success fa-solid fa-circle-check absolute top-[12px] text-[#2ecc71] invisible right-4 text-2xl"
+            ></i>
+            <span class="text-xs mb-4 inline-block invisible text-red"
+              >message</span
             >
           </div>
           <button
-            id="submit"
-            class="bg-green border-none hover:opacity-70 shadow-inner text-white w-full p-4 rounded-md mb-4 font-medium uppercase tracking-wider"
             type="submit"
+            class="bg-green border-none outline-none rounded-md px-8 py-4 w-full text-white font-semibold hover:opacity-80"
           >
-            Claim your free trial
+            CLAIM YOUR FREE TRIAL
           </button>
-          <div class="terms-condition text-xs text-grayishBlue text-center">
+          <p class="tc text-xs text-grayishBlue mt-5 text-center">
             By clicking the button, you are agreeing to our
-            <span class="text-red font-bold"> Terms and Services</span>
-          </div>
+            <span class="text-red font-bold">Terms and Services</span>
+          </p>
         </form>
       </div>
     </main>

@@ -23,6 +23,7 @@
     />
     <!-- css file link -->
     <link rel="stylesheet" href="./main.css" />
+    <script src="./js/script.js" defer></script>
     <title>Sign up form</title>
   </head>
   <body class="h-full overflow-y-scroll">
@@ -56,41 +57,60 @@
         </div>
         <!-- signup form entry  -->
         <form action="#" class="md:p-10 shadow-xl bg-white rounded-md p-5">
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
-            type="text"
-            placeholder="First Name"
-            name="firstname"
-            id=""
-          />
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
-            type="text"
-            placeholder="Last Name"
-            name="lasname"
-            id=""
-          />
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2 mb-8"
-            type="email"
-            placeholder="Email Address"
-            name="email"
-            id=""
-          />
-          <input
-            class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border-grayishBlue border-solid border-2 mb-8 h-14"
-            type="password"
-            placeholder="Password"
-            name="password"
-            id=""
-          />
+          <div class="mb-6 text-right">
+            <input
+              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2"
+              type="text"
+              placeholder="First Name"
+              name="firstname"
+            />
+
+            <span class="hidden text-xs mt-2 text-red -mb-1" id="error"
+              >First name cannot be empty</span
+            >
+          </div>
+          <div class="mb-6 text-right">
+            <input
+              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2"
+              type="text"
+              placeholder="Last Name"
+              name="lasname"
+            />
+            <span class="hidden text-xs mt-2 text-red -mb-1" id="error"
+              >Last name cannot be empty</span
+            >
+          </div>
+          <div class="mb-6 text-right">
+            <input
+              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border- h-14 border-solid border-2"
+              type="text"
+              placeholder="Email Address"
+              name="email"
+              id="email"
+            />
+            <span class="hidden text-xs mt-2 text-red -mb-1" id="email-error"
+              >Looks like this is not an email</span
+            >
+          </div>
+          <div class="mb-6 text-right">
+            <input
+              class="p-4 w-full outline-none active:border-darkBlue focus:border-darkBlue rounded-md border-solid border-2 h-14"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <span class="hidden text-xs mt-2 text-red -mb-1" id="error"
+              >Password cannot be empty</span
+            >
+          </div>
           <button
+            id="submit"
             class="bg-green border-none hover:opacity-70 shadow-inner text-white w-full p-4 rounded-md mb-4 font-medium uppercase tracking-wider"
             type="submit"
           >
             Claim your free trial
           </button>
-          <div class="terms-condition text-sm text-grayishBlue text-center">
+          <div class="terms-condition text-xs text-grayishBlue text-center">
             By clicking the button, you are agreeing to our
             <span class="text-red font-bold"> Terms and Services</span>
           </div>

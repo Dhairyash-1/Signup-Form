@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- font awesome icon links -->
     <script
       src="https://kit.fontawesome.com/53f653bbb9.js"
       crossorigin="anonymous"
@@ -17,16 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <!-- css file link -->
+    <!-- custom css file link -->
     <link rel="stylesheet" href="./main.css" />
-    <script src="./js/script.js" defer></script>
+    <!-- custom js file link -->
+    <script src="./js/script.js" type="module"></script>
     <title>Sign up form</title>
   </head>
   <body class="h-full overflow-y-scroll">
@@ -47,9 +46,9 @@
           invaluable.
         </p>
       </div>
-
+      <!-- ************************************************************************************************ -->
       <!-- sign up form -->
-      <!-- ************************************************** -->
+      <!-- ***************************************************************************************** -->
       <div class="form-area grow shrink sm:min-w-[412px] max-w-2xl w-full">
         <!-- banner -->
         <div
@@ -144,12 +143,14 @@
               >message</span
             >
           </div>
+          <!-- submit button -->
           <button
             type="submit"
             class="bg-green border-none outline-none rounded-md px-8 py-4 w-full text-white font-semibold hover:opacity-80"
           >
             CLAIM YOUR FREE TRIAL
           </button>
+          <!-- terms and condition -->
           <p class="tc text-xs text-grayishBlue mt-5 text-center">
             By clicking the button, you are agreeing to our
             <span class="text-red font-bold">Terms and Services</span>

@@ -31,11 +31,11 @@ Users should be able to:
 
 ### Screenshot of Output
 
-![Result](./images/screenshot.png)
+![Result](./images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/tailwind-css-signup-form-with-client-side-validation-_-COtiI-7A)
 - Live Site URL: [live site here](https://signup-form-with-validations.netlify.app/)
 
 ## My process

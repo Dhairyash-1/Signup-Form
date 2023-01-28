@@ -4,12 +4,13 @@ const lastName = document.getElementById("lastName");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 
+// adding event listner on form submit
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs();
 });
 
-// checking the all input value on submit
+// checking the all input value on submit button click
 
 function checkInputs() {
   // trim to remove whitespace
@@ -45,26 +46,27 @@ function checkInputs() {
 // showing the error
 function setErrorFor(input, msg) {
   const formControl = input.parentElement;
-
   const span = formControl.querySelector("span");
   const error = formControl.querySelector(".error");
 
-  error.classList.remove("invisible");
-  span.classList.remove("invisible");
-  span.innerText = msg;
-  input.style.borderColor = "red";
+  error.classList.remove("invisible"); // removing class to show-erro
+  span.classList.remove("invisible"); // removing class to show-success
+  span.innerText = msg; // printing the error msg
+  input.style.borderColor = "red"; // chaingin border color on error
 }
 
 // showing the success
+
 function setSuccessFor(input) {
   const formControl = input.parentElement;
   const error = formControl.querySelector(".error");
   const span = formControl.querySelector("span");
-
   const success = formControl.querySelector(".success");
-  success.classList.remove("invisible");
 
-  input.style.borderColor = "green";
+  success.classList.remove("invisible"); // removing class to show success
+
+  input.style.borderColor = "green"; // changin border color on success
+  // checking input for containing class invisible
   if (!error.classList.contains("invisible")) {
     error.classList.add("invisible");
     span.classList.add("invisible");
